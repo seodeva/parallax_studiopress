@@ -105,6 +105,9 @@ function parallax_comments_gravatar( $args ) {
 
 }
 
+// This code anbles Shortcodes in WordPress Text Widget
+add_filter('widget_text', 'do_shortcode');
+
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 1 );
 
@@ -150,4 +153,34 @@ genesis_register_sidebar( array(
 	'id'          => 'home-section-7',
 	'name'        => __( 'Home Section 7', 'parallax' ),
 	'description' => __( 'This is the home section 7 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-8',
+	'name'        => __( 'Home Section 8', 'parallax' ),
+	'description' => __( 'This is the home section 8 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-9',
+	'name'        => __( 'Home Section 9', 'parallax' ),
+	'description' => __( 'This is the home section 9 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-10',
+	'name'        => __( 'Home Section 10', 'parallax' ),
+	'description' => __( 'This is the home section 10 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-11',
+	'name'        => __( 'Home Section 11', 'parallax' ),
+	'description' => __( 'This is the home section 11 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-12',
+	'name'        => __( 'Home Section 12', 'parallax' ),
+	'description' => __( 'This is the home section 12 section.', 'parallax' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-section-13',
+	'name'        => __( 'Home Section 13', 'parallax' ),
+	'description' => __( 'This is the home section 13 section.', 'parallax' ),
 ) );
