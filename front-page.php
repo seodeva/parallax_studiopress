@@ -2,7 +2,7 @@
 /**
  * This file adds the Home Page to the Parallax Pro Theme.
  *
- * @author StudioPress
+ * @author Brad Dalton - Valentina Mercenaro
  * @package Parallax
  * @subpackage Customizations
  */
@@ -14,7 +14,7 @@ add_action( 'genesis_meta', 'parallax_home_genesis_meta' );
  */
 function parallax_home_genesis_meta() {
 
-	if ( is_active_sidebar( 'home-section-1' ) || is_active_sidebar( 'home-section-2' ) || is_active_sidebar( 'home-section-3' ) || is_active_sidebar( 'home-section-4' ) || is_active_sidebar( 'home-section-5' ) ) {
+	if ( is_active_sidebar( 'home-section-1' ) || is_active_sidebar( 'home-section-2' ) || is_active_sidebar( 'home-section-3' ) || is_active_sidebar( 'home-section-4' ) || is_active_sidebar( 'home-section-5' )  || is_active_sidebar( 'home-section-6' ) || is_active_sidebar( 'home-section-7' ) || is_active_sidebar( 'home-section-8' ) || is_active_sidebar( 'home-section-9' ) || is_active_sidebar( 'home-section-10' ) || is_active_sidebar( 'home-section-11' ) || is_active_sidebar( 'home-section-12' ) || is_active_sidebar( 'home-section-13' ) ) {
 
 		//* Enqueue parallax script
 		add_action( 'wp_enqueue_scripts', 'parallax_enqueue_parallax_script' );
@@ -83,7 +83,52 @@ function parallax_homepage_widgets() {
 		'before' => '<div class="home-odd home-section-5 widget-area"><div class="wrap">',
 		'after'  => '</div></div>',
 	) );
+	
+	genesis_widget_area( 'home-section-6', array(
+		'before' => '<div class="home-even home-section-6 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+	
+	genesis_widget_area( 'home-section-7', array(
+		'before' => '<div class="home-odd home-section-7 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+	genesis_widget_area( 'home-section-8', array(
+		'before' => '<div class="home-even home-section-8 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+	
+	genesis_widget_area( 'home-section-9', array(
+		'before' => '<div class="home-odd home-section-9 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+	genesis_widget_area( 'home-section-10', array(
+		'before' => '<div class="home-even home-section-10 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+	
+	genesis_widget_area( 'home-section-11', array(
+		'before' => '<div class="home-odd home-section-11 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+	genesis_widget_area( 'home-section-12', array(
+		'before' => '<div class="home-even home-section-12 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+	
+	genesis_widget_area( 'home-section-13', array(
+		'before' => '<div class="home-odd home-section-13 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+
 
 }
+
+
+
 
 genesis();
